@@ -113,7 +113,7 @@ body {
 }
 
 .projects .project1 .spacedesc {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   margin: 0 auto;
   border: 7px groove #1C6EA4;
@@ -124,7 +124,7 @@ body {
 }
 
 .projects .project1 .spacegif img {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   margin: 10px;
   border: 1px solid #1C6EA4;
@@ -141,7 +141,7 @@ body {
 }
 
 .training .trainingdesc {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   margin: 0 auto;
   border: 7px groove #1C6EA4;
@@ -152,7 +152,7 @@ body {
 }
 
 .training .codegif img {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   margin: 10px;
   border: 1px solid #1C6EA4;
@@ -169,7 +169,7 @@ body {
 }
 
 .about .aboutdesc {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   margin: 0 auto;
   border: 7px groove #1C6EA4;
@@ -180,7 +180,7 @@ body {
 }
 
 .about .aboutmepic img {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   margin: 10px;
 }
@@ -193,7 +193,7 @@ body {
 }
 
 .contact .contactmedesc {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   margin: 0 auto;
   border: 7px groove #1C6EA4;
@@ -204,7 +204,7 @@ body {
 }
 
 .contact .contactmepic img {
-  width: 480px;
+  width: 580px;
   padding: 10px;
   padding-bottom: 90px;
   margin: 10px;
@@ -456,7 +456,7 @@ body {
 
 /** About me image effect **/
 .image-wrapper {
-  left: 385px;
+  left: 350px;
   position: relative;
   margin: 0 auto;
 }

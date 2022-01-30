@@ -15,8 +15,8 @@ body{
     text-align: center;
     width: 100vh;
     height:100vh;
-    .header-block{
     
+    .header-block{
         div {
             color: #d8d8d8;
             text-align: center;
@@ -93,7 +93,7 @@ body{
                 }
               }
             }
-          }
+        }
     }
 }
 
@@ -106,7 +106,7 @@ body{
     .project1{
        
         .spacedesc{
-            width: 480px;
+            width: 580px;
             padding: 10px;
             margin: 0 auto;
             border: 7px groove #1C6EA4;
@@ -117,7 +117,7 @@ body{
         .spacegif{
             
             img{
-                width: 480px;
+                width: 580px;
                 padding: 10px;
                 margin: 10px;
                 border: 1px solid #1C6EA4;
@@ -135,7 +135,7 @@ body{
     height:100vh;
 
     .trainingdesc{
-        width: 480px;
+        width: 580px;
         padding: 10px;
         margin: 0 auto;
         border: 7px groove #1C6EA4;
@@ -147,7 +147,7 @@ body{
     .codegif{
 
         img{
-            width: 480px;
+            width: 580px;
             padding: 10px;
             margin: 10px;
             border: 1px solid #1C6EA4;
@@ -165,7 +165,7 @@ body{
     height:100vh;
 
     .aboutdesc{
-        width: 480px;
+        width: 580px;
         padding: 10px;
         margin: 0 auto;
         border: 7px groove #1C6EA4;
@@ -177,7 +177,7 @@ body{
     .aboutmepic{
 
         img{
-            width: 480px;
+            width: 580px;
             padding: 10px;
             margin: 10px;
             
@@ -194,7 +194,7 @@ body{
     
 
     .contactmedesc{
-        width: 480px;
+        width: 580px;
         padding: 10px;
         margin: 0 auto;
         border: 7px groove #1C6EA4;
@@ -207,7 +207,7 @@ body{
     .contactmepic{
         
         img{
-            width: 480px;
+            width: 580px;
             padding: 10px;
             padding-bottom: 90px;
             margin: 10px;
@@ -416,7 +416,7 @@ body{
 
 /** About me image effect **/
 .image-wrapper {
-    left: 385px;
+    left: 350px;
     position: relative;
     margin: 0 auto;
   }
