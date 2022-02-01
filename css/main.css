@@ -204,11 +204,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   display: -ms-grid;
   display: grid;
   height: 100vh;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: .1fr 1fr 1fr 1fr .1fr;
-      grid-template-rows: .1fr 1fr 1fr 1fr .1fr;
-      grid-template-areas: "sidebar myprojects myprojects" "sidebar project1 project2" "sidebar project3 project4" "sidebar project5 project6" "footer footer footer";
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: .1fr 1fr 1fr 1fr 1fr 1fr 1fr .1fr;
+      grid-template-rows: .1fr 1fr 1fr 1fr 1fr 1fr 1fr .1fr;
+      grid-template-areas: "myprojects myprojects myprojects myprojects" "sidebar1 project1 project2 sidebar2" "sidebar1 project3 project4 sidebar2" "sidebar1 project5 project6 sidebar2" "breakbar breakbar breakbar breakbar" "sidebar3 about about sidebar4" "sidebar3 training training sidebar4" "sidebar3 contact contact sidebar4" "footer footer footer footer";
   grid-gap: 0.5em;
   margin: 0.5em;
   font-family: 'Montserrat', sans-serif;
@@ -217,8 +217,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 .maincontent .myprojects {
   background-color: #a3078100;
   -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-area: myprojects;
   border-radius: 5px;
 }
@@ -257,35 +257,27 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 }
 
-.maincontent .sidebar {
-  background-color: #02446300;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
+.maincontent .sidebar1 {
+  background-color: #57575700;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
   -ms-grid-column: 1;
-  grid-area: sidebar;
-  border-radius: 5px;
+  grid-area: sidebar1;
+  border-radius: 10px;
   padding: 10px;
-}
-
-.maincontent .sidebar .aboutme {
-  text-align: center;
-  margin: 10px;
-}
-
-.maincontent .sidebar .training {
-  text-align: center;
-}
-
-.maincontent .sidebar .contactme {
-  text-align: center;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/meowwolf.jpg");
 }
 
 .maincontent #project1 {
-  background-color: #0772a354;
+  background-color: #1d1d1d00;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: project1;
   border-radius: 10px;
+  border: 3px solid #89bbf6;
   padding: 5px;
 }
 
@@ -298,11 +290,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .maincontent #project2 {
-  background-color: #0772a354;
+  background-color: #1d1d1d00;
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: project2;
   border-radius: 10px;
+  border: 3px solid #89bbf6;
   padding: 5px;
 }
 
@@ -315,11 +308,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .maincontent #project3 {
-  background-color: #0772a354;
+  background-color: #1d1d1d00;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: project3;
   border-radius: 10px;
+  border: 3px solid #89bbf6;
   padding: 5px;
 }
 
@@ -332,11 +326,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .maincontent #project4 {
-  background-color: #0772a354;
+  background-color: #1d1d1d00;
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: project4;
   border-radius: 10px;
+  border: 3px solid #89bbf6;
   padding: 5px;
 }
 
@@ -349,11 +344,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .maincontent #project5 {
-  background-color: #0772a354;
+  background-color: #1d1d1d00;
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: project5;
   border-radius: 10px;
+  border: 3px solid #89bbf6;
   padding: 5px;
 }
 
@@ -366,11 +362,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .maincontent #project6 {
-  background-color: #0772a354;
+  background-color: #1d1d1d00;
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: project6;
   border-radius: 10px;
+  border: 3px solid #89bbf6;
   padding: 5px;
 }
 
@@ -382,15 +379,125 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   text-align: center;
 }
 
-.maincontent footer {
-  background-color: #0772a354;
+.maincontent #sidebar2 {
+  background-color: #02446300;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: sidebar2;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/meowwolf2.jpg");
+}
+
+.maincontent #sidebar3 {
+  background-color: #0772a300;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: sidebar3;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/stairs1.jpg");
+}
+
+.maincontent #sidebar4 {
+  background-color: #0772a300;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 4;
+  grid-area: sidebar4;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/stairs2.jpg");
+}
+
+.maincontent #breakbar {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 4;
+  grid-area: breakbar;
+}
+
+.maincontent #about {
+  background-color: #1d1d1d00;
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: about;
+  border-radius: 10px;
+  border: 3px solid #89bbf6;
+  padding: 5px;
+  text-align: center;
+}
+
+.maincontent #about h2 {
+  text-align: center;
+}
+
+.maincontent #about p {
+  text-align: center;
+}
+
+.maincontent #training {
+  background-color: #1d1d1d00;
+  -ms-grid-row: 7;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: training;
+  border-radius: 10px;
+  border: 3px solid #89bbf6;
+  padding: 5px;
+  text-align: center;
+}
+
+.maincontent #training h2 {
+  text-align: center;
+}
+
+.maincontent #training p {
+  text-align: center;
+}
+
+.maincontent #contact {
+  background-color: #1d1d1d00;
+  -ms-grid-row: 8;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: contact;
+  border-radius: 10px;
+  border: 3px solid #89bbf6;
+  padding: 5px;
+  text-align: center;
+}
+
+.maincontent #contact h2 {
+  text-align: center;
+}
+
+.maincontent #contact p {
+  text-align: center;
+}
+
+.maincontent footer {
+  background-color: #89bcf698;
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
   grid-area: footer;
   border-radius: 10px;
   padding: 10px;
   text-align: center;
+  color: black;
 }
 
 .maincontent footer .links {
@@ -406,14 +513,14 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "sidebar" "myprojects" "project1" "project2" "project3" "project4" "project5" "project6" "footer";
+        grid-template-areas: "myprojects" "project1" "project2" "project3" "project4" "project5" "project6" "breakbar" "about" "training" "contact" "footer";
     grid-gap: 0.5em;
     margin: 0.5em;
     font-family: 'Montserrat', sans-serif;
   }
   .maincontent .myprojects {
     background-color: #a3078100;
-    -ms-grid-row: 2;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: myprojects;
     border-radius: 5px;
@@ -449,30 +556,27 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       background-size: 10%;
     }
   }
-  .maincontent .sidebar {
-    background-color: #02446300;
-    -ms-grid-row: 1;
+  .maincontent .sidebar1 {
+    display: none;
+    background-color: #57575700;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
     -ms-grid-column: 1;
-    grid-area: sidebar;
-    border-radius: 5px;
+    grid-area: sidebar1;
+    border-radius: 10px;
     padding: 10px;
-  }
-  .maincontent .sidebar .aboutme {
-    text-align: center;
-    margin: 10px;
-  }
-  .maincontent .sidebar .training {
-    text-align: center;
-  }
-  .maincontent .sidebar .contactme {
-    text-align: center;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/meowwolf.jpg");
   }
   .maincontent #project1 {
-    background-color: #0772a354;
-    -ms-grid-row: 3;
+    background-color: #1d1d1d00;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: project1;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
   }
   .maincontent #project1 h2 {
@@ -482,11 +586,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     text-align: center;
   }
   .maincontent #project2 {
-    background-color: #0772a354;
-    -ms-grid-row: 4;
+    background-color: #1d1d1d00;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: project2;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
   }
   .maincontent #project2 h2 {
@@ -496,11 +601,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     text-align: center;
   }
   .maincontent #project3 {
-    background-color: #0772a354;
-    -ms-grid-row: 5;
+    background-color: #1d1d1d00;
+    -ms-grid-row: 4;
     -ms-grid-column: 1;
     grid-area: project3;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
   }
   .maincontent #project3 h2 {
@@ -510,11 +616,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     text-align: center;
   }
   .maincontent #project4 {
-    background-color: #0772a354;
-    -ms-grid-row: 6;
+    background-color: #1d1d1d00;
+    -ms-grid-row: 5;
     -ms-grid-column: 1;
     grid-area: project4;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
   }
   .maincontent #project4 h2 {
@@ -524,11 +631,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     text-align: center;
   }
   .maincontent #project5 {
-    background-color: #0772a354;
-    -ms-grid-row: 7;
+    background-color: #1d1d1d00;
+    -ms-grid-row: 6;
     -ms-grid-column: 1;
     grid-area: project5;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
   }
   .maincontent #project5 h2 {
@@ -538,11 +646,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     text-align: center;
   }
   .maincontent #project6 {
-    background-color: #0772a354;
-    -ms-grid-row: 8;
+    background-color: #1d1d1d00;
+    -ms-grid-row: 7;
     -ms-grid-column: 1;
     grid-area: project6;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
   }
   .maincontent #project6 h2 {
@@ -551,14 +660,110 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   .maincontent #project6 p {
     text-align: center;
   }
-  .maincontent footer {
-    background-color: #0772a354;
+  .maincontent #sidebar2 {
+    display: none;
+    background-color: #02446300;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    grid-area: sidebar2;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/meowwolf2.jpg");
+  }
+  .maincontent #sidebar3 {
+    display: none;
+    background-color: #0772a300;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: sidebar3;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/stairs1.jpg");
+  }
+  .maincontent #sidebar4 {
+    display: none;
+    background-color: #0772a300;
+    -ms-grid-row: 6;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 4;
+    grid-area: sidebar4;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../img/stairs2.jpg");
+  }
+  .maincontent #breakbar {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
+    grid-area: breakbar;
+  }
+  .maincontent #about {
+    background-color: #1d1d1d00;
     -ms-grid-row: 9;
+    -ms-grid-column: 1;
+    grid-area: about;
+    border-radius: 10px;
+    border: 3px solid #89bbf6;
+    padding: 5px;
+    text-align: center;
+  }
+  .maincontent #about h2 {
+    text-align: center;
+  }
+  .maincontent #about p {
+    text-align: center;
+  }
+  .maincontent #training {
+    background-color: #1d1d1d00;
+    -ms-grid-row: 10;
+    -ms-grid-column: 1;
+    grid-area: training;
+    border-radius: 10px;
+    border: 3px solid #89bbf6;
+    padding: 5px;
+    text-align: center;
+  }
+  .maincontent #training h2 {
+    text-align: center;
+  }
+  .maincontent #training p {
+    text-align: center;
+  }
+  .maincontent #contact {
+    background-color: #1d1d1d00;
+    -ms-grid-row: 11;
+    -ms-grid-column: 1;
+    grid-area: contact;
+    border-radius: 10px;
+    border: 3px solid #89bbf6;
+    padding: 5px;
+    text-align: center;
+  }
+  .maincontent #contact h2 {
+    text-align: center;
+  }
+  .maincontent #contact p {
+    text-align: center;
+  }
+  .maincontent footer {
+    background-color: #89bcf698;
+    -ms-grid-row: 12;
     -ms-grid-column: 1;
     grid-area: footer;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
+    color: black;
   }
   .maincontent footer .links {
     padding: 1%;

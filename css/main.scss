@@ -184,14 +184,18 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 .maincontent{
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: .1fr 1fr 1fr 1fr .1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: .1fr 1fr 1fr 1fr 1fr 1fr 1fr .1fr;
   grid-template-areas: 
-  "sidebar myprojects myprojects"
-  "sidebar project1 project2"
-  "sidebar project3 project4"
-  "sidebar project5 project6"
-  "footer footer footer";
+  "myprojects myprojects myprojects myprojects"
+  "sidebar1 project1 project2 sidebar2"
+  "sidebar1 project3 project4 sidebar2"
+  "sidebar1 project5 project6 sidebar2"
+  "breakbar breakbar breakbar breakbar"
+  "sidebar3 about about sidebar4"
+  "sidebar3 training training sidebar4"
+  "sidebar3 contact contact sidebar4"
+  "footer footer footer footer";
   grid-gap: 0.5em;
   margin: 0.5em;
   font-family:'Montserrat', sans-serif;
@@ -224,30 +228,21 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
         }
       }
   }
-  .sidebar{
-    background-color: #02446300;
-    grid-area: sidebar;
-    border-radius: 5px;
+  .sidebar1{
+    background-color: #57575700;
+    grid-area: sidebar1;
+    border-radius: 10px;
     padding: 10px;
-
-      .aboutme{
-        text-align: center;
-        margin: 10px;
-      }
-
-      .training{
-        text-align: center;
-        
-      }
-
-      .contactme{
-        text-align: center;
-      }
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/meowwolf.jpg');
   }
   #project1{
-    background-color: #0772a354;
+    background-color: #1d1d1d00;
     grid-area: project1;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
 
       h2{
@@ -261,9 +256,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   #project2{
-    background-color: #0772a354;
+    background-color: #1d1d1d00;
     grid-area: project2;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
 
       h2{
@@ -277,9 +273,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   #project3{
-    background-color: #0772a354;
+    background-color: #1d1d1d00;
     grid-area: project3;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
 
       h2{
@@ -293,9 +290,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   #project4{
-    background-color: #0772a354;
+    background-color: #1d1d1d00;
     grid-area: project4;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
 
       h2{
@@ -309,9 +307,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   #project5{
-    background-color: #0772a354;
+    background-color: #1d1d1d00;
     grid-area: project5;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
 
       h2{
@@ -325,9 +324,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   #project6{
-    background-color: #0772a354;
+    background-color: #1d1d1d00;
     grid-area: project6;
     border-radius: 10px;
+    border: 3px solid #89bbf6;
     padding: 5px;
 
       h2{
@@ -340,12 +340,101 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   }
 
+  #sidebar2{
+    background-color: #02446300;
+    grid-area: sidebar2;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/meowwolf2.jpg');
+  }
+
+  #sidebar3{
+    background-color: #0772a300;
+    grid-area: sidebar3;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/stairs1.jpg');
+  }
+
+  #sidebar4{
+    background-color: #0772a300;
+    grid-area: sidebar4;
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: url('../img/stairs2.jpg');
+  }
+
+  #breakbar{
+    grid-area: breakbar;
+  }
+
+  #about{
+    background-color: #1d1d1d00;
+    grid-area: about;
+    border-radius: 10px;
+    border: 3px solid #89bbf6;
+    padding: 5px;
+    text-align: center;
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+    }
+  }
+
+  #training{
+    background-color: #1d1d1d00;
+    grid-area: training;
+    border-radius: 10px;
+    border: 3px solid #89bbf6;
+    padding: 5px;
+    text-align: center;
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+    }
+  }
+
+  #contact{
+    background-color: #1d1d1d00;
+    grid-area: contact;
+    border-radius: 10px;
+    border: 3px solid #89bbf6;
+    padding: 5px;
+    text-align: center;
+
+    h2{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+    }
+  }
+
   footer{
-    background-color: #0772a354;
+    background-color: #89bcf698;
     grid-area: footer;
     border-radius: 10px;
     padding: 10px;
     text-align: center;
+    color: black;
     
 
       .links{
@@ -361,7 +450,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "sidebar"
     "myprojects"
     "project1"
     "project2"
@@ -369,6 +457,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     "project4"
     "project5"
     "project6"
+    "breakbar"
+    "about"
+    "training"
+    "contact"
     "footer";
     grid-gap: 0.5em;
     margin: 0.5em;
@@ -402,29 +494,22 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
           }
         }
     }
-    .sidebar{
-      background-color: #02446300;
-      grid-area: sidebar;
-      border-radius: 5px;
+    .sidebar1{
+      display: none;
+      background-color: #57575700;
+      grid-area: sidebar1;
+      border-radius: 10px;
       padding: 10px;
-  
-        .aboutme{
-          text-align: center;
-          margin: 10px;
-        }
-  
-        .training{
-          text-align: center;
-          
-        }
-        .contactme{
-          text-align: center;
-        }
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-image: url('../img/meowwolf.jpg');
     }
     #project1{
-      background-color: #0772a354;
+      background-color: #1d1d1d00;
       grid-area: project1;
       border-radius: 10px;
+      border: 3px solid #89bbf6;
       padding: 5px;
   
         h2{
@@ -438,9 +523,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
   
     #project2{
-      background-color: #0772a354;
+      background-color: #1d1d1d00;
       grid-area: project2;
       border-radius: 10px;
+      border: 3px solid #89bbf6;
       padding: 5px;
   
         h2{
@@ -454,9 +540,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
   
     #project3{
-      background-color: #0772a354;
+      background-color: #1d1d1d00;
       grid-area: project3;
       border-radius: 10px;
+      border: 3px solid #89bbf6;
       padding: 5px;
   
         h2{
@@ -470,9 +557,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
   
     #project4{
-      background-color: #0772a354;
+      background-color: #1d1d1d00;
       grid-area: project4;
       border-radius: 10px;
+      border: 3px solid #89bbf6;
       padding: 5px;
   
         h2{
@@ -486,9 +574,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
   
     #project5{
-      background-color: #0772a354;
+      background-color: #1d1d1d00;
       grid-area: project5;
       border-radius: 10px;
+      border: 3px solid #89bbf6;
       padding: 5px;
   
         h2{
@@ -502,9 +591,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
   
     #project6{
-      background-color: #0772a354;
+      background-color: #1d1d1d00;
       grid-area: project6;
       border-radius: 10px;
+      border: 3px solid #89bbf6;
       padding: 5px;
   
         h2{
@@ -517,12 +607,104 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   
     }
   
+    #sidebar2{
+      display: none;
+      background-color: #02446300;
+      grid-area: sidebar2;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-image: url('../img/meowwolf2.jpg');
+    }
+  
+    #sidebar3{
+      display: none;
+      background-color: #0772a300;
+      grid-area: sidebar3;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-image: url('../img/stairs1.jpg');
+    }
+  
+    #sidebar4{
+      display: none;
+      background-color: #0772a300;
+      grid-area: sidebar4;
+      border-radius: 10px;
+      padding: 10px;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-image: url('../img/stairs2.jpg');
+    }
+  
+    #breakbar{
+      grid-area: breakbar;
+    }
+  
+    #about{
+      background-color: #1d1d1d00;
+      grid-area: about;
+      border-radius: 10px;
+      border: 3px solid #89bbf6;
+      padding: 5px;
+      text-align: center;
+  
+      h2{
+        text-align: center;
+      }
+  
+      p{
+        text-align: center;
+      }
+    }
+  
+    #training{
+      background-color: #1d1d1d00;
+      grid-area: training;
+      border-radius: 10px;
+      border: 3px solid #89bbf6;
+      padding: 5px;
+      text-align: center;
+  
+      h2{
+        text-align: center;
+      }
+  
+      p{
+        text-align: center;
+      }
+    }
+  
+    #contact{
+      background-color: #1d1d1d00;
+      grid-area: contact;
+      border-radius: 10px;
+      border: 3px solid #89bbf6;
+      padding: 5px;
+      text-align: center;
+  
+      h2{
+        text-align: center;
+      }
+  
+      p{
+        text-align: center;
+      }
+    }
+  
     footer{
-      background-color: #0772a354;
+      background-color: #89bcf698;
       grid-area: footer;
       border-radius: 10px;
       padding: 10px;
       text-align: center;
+      color: black;
       
   
         .links{
