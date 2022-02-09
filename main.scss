@@ -6,7 +6,7 @@ body{
     color: #d8d8d8;
     margin: 0;
     padding: 0;
-    background-color: #0C0C0C;
+    background-color: #000000;
 }
 
 /** Fully responsive hero. **/
@@ -14,9 +14,11 @@ body{
 .hero-image{
   position: relative;
   height: 100vh;
-  background: url(../img/jeep.jpg) no-repeat center;
+  background-image: url(img/moongif.gif);
   background-size: cover;
   overflow: hidden;
+  
+  
 
     .container{
       position: absolute;
@@ -130,61 +132,6 @@ nav{
         }
     }
 }
-@media screen and (max-width: 768px) {
-  nav{
-
-    .logo{
-      float: none;
-      width: auto;
-      justify-content: center;
-    }
-
-    .links{
-      float: none;
-      position: fixed;
-      z-index: 9;
-      left: 0;
-      right: 0;
-      top: 100px;
-      bottom: 100%;
-      width: auto;
-      height: auto;
-      flex-direction: column;
-      justify-content: space-evenly;
-      background-color: rgba(0,0,0,.8);
-      overflow: hidden;
-      transition: all .5s ease-in-out;
-
-        a{
-          font-size: 20px;
-
-        }
-    }
-    .icon-burger{
-      display: block;
-      animation: wiggle .5s infinite alternate;
-    }
-    
-    
-    @keyframes wiggle {
-      0% { transform: rotate(10%); }
-      100% { transform: rotate(0deg); }
-    }
-    
-  }
-}
-nav :checked ~ .links {
-  bottom: 0;
-}
-nav :checked ~ .icon-burger .line:nth-child(1) {
-  transform: translateY(10px) rotate(225deg);
-}
-nav :checked ~ .icon-burger .line:nth-child(3) {
-  transform: translateY(-10px) rotate(-225deg);
-}
-nav :checked ~ .icon-burger .line:nth-child(2) {
-  opacity: 0;
-}
 
 @media screen and (max-width: 768px) {
   nav{
@@ -236,6 +183,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 /** Main content **/
 
+body{
+  background-color: #0c0c0c;
+}
 .maincontent{
   display: grid;
   height: auto;
@@ -294,6 +244,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   
     @media only screen and (max-width:768px){
+      body{
+        background-color: #0c0c0c;
+      }
       .maincontent{
         display: grid;
         height: 100vh;

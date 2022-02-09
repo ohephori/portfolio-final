@@ -11,10 +11,11 @@ body {
 /** Fully responsive hero. **/
 .hero-image {
   position: relative;
-  height: 100vh;
-  background: url(../img/treking.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
+  height: 90vh;
+  background-image: url(../img/moonrotate.gif);
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .hero-image .container {
@@ -147,9 +148,9 @@ nav .icon-burger .line {
   nav .logo {
     float: none;
     width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
   nav .links {
     float: none;
@@ -200,6 +201,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 /** Main content **/
+body {
+  background-image: url(../img/mobilebackground.jpg);
+  background-size: contain;
+}
+
 .maincontent {
   display: -ms-grid;
   display: grid;

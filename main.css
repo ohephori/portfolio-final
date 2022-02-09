@@ -5,14 +5,14 @@ body {
   color: #d8d8d8;
   margin: 0;
   padding: 0;
-  background-color: #0C0C0C;
+  background-color: #000000;
 }
 
 /** Fully responsive hero. **/
 .hero-image {
   position: relative;
   height: 100vh;
-  background: url(../img/jeep.jpg) no-repeat center;
+  background-image: url(img/moongif.gif);
   background-size: cover;
   overflow: hidden;
 }
@@ -147,84 +147,6 @@ nav .icon-burger .line {
   nav .logo {
     float: none;
     width: auto;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  nav .links {
-    float: none;
-    position: fixed;
-    z-index: 9;
-    left: 0;
-    right: 0;
-    top: 100px;
-    bottom: 100%;
-    width: auto;
-    height: auto;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    background-color: rgba(0, 0, 0, 0.8);
-    overflow: hidden;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-  }
-  nav .links a {
-    font-size: 20px;
-  }
-  nav .icon-burger {
-    display: block;
-    -webkit-animation: wiggle .5s infinite alternate;
-            animation: wiggle .5s infinite alternate;
-  }
-  @-webkit-keyframes wiggle {
-    0% {
-      -webkit-transform: rotate(10%);
-              transform: rotate(10%);
-    }
-    100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-  }
-  @keyframes wiggle {
-    0% {
-      -webkit-transform: rotate(10%);
-              transform: rotate(10%);
-    }
-    100% {
-      -webkit-transform: rotate(0deg);
-              transform: rotate(0deg);
-    }
-  }
-}
-
-nav :checked ~ .links {
-  bottom: 0;
-}
-
-nav :checked ~ .icon-burger .line:nth-child(1) {
-  -webkit-transform: translateY(10px) rotate(225deg);
-          transform: translateY(10px) rotate(225deg);
-}
-
-nav :checked ~ .icon-burger .line:nth-child(3) {
-  -webkit-transform: translateY(-10px) rotate(-225deg);
-          transform: translateY(-10px) rotate(-225deg);
-}
-
-nav :checked ~ .icon-burger .line:nth-child(2) {
-  opacity: 0;
-}
-
-@media screen and (max-width: 768px) {
-  nav .logo {
-    float: none;
-    width: auto;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
@@ -278,6 +200,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 /** Main content **/
+body {
+  background-color: #0c0c0c;
+}
+
 .maincontent {
   display: -ms-grid;
   display: grid;
@@ -340,6 +266,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    background-color: #0c0c0c;
+  }
   .maincontent {
     display: -ms-grid;
     display: grid;

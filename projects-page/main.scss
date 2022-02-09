@@ -7,17 +7,19 @@ body{
     color: #d8d8d8;
     margin: 0;
     padding: 0;
-    background-color: #0C0C0C;
+    background-image: url(../img/mobilebackground.jpg);
+    background-size: contain;
 }
 
 /** Fully responsive hero. **/
 
 .hero-image{
   position: relative;
-  height: 100vh;
-  background: url(../img/maroon-bells.jpg) no-repeat center;
-  background-size: cover;
-  overflow: hidden;
+  height: 90vh;
+  background-image: url(../img/moonrotate.gif);
+  background-position: center center;
+  background-size: contain; 
+  background-repeat: no-repeat;
 
     .container{
       position: absolute;
@@ -183,9 +185,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 /** Main content **/
 
 .maincontent{
+
   display: grid;
   height: auto;
-  grid-template-columns: .5fr 1fr 1fr .5fr;
+  grid-template-columns: .7fr 1fr 1fr .7fr;
   grid-template-rows: 1fr 1fr 1fr .1fr .1fr .1fr;
   grid-template-areas: 
   "project1 project1 project1 project1"
@@ -197,12 +200,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   "footer footer footer footer"
   "sitemap sitemap sitemap sitemap"
   "copyright copyright copyright copyright";
-  grid-gap: .5em;
-  margin: 0.5em;
-  font-family:'Montserrat', sans-serif;
+  grid-gap: 2.5em;
+  margin: 9.5em;
+  font-family:'Poppins', sans-serif;
 
   #project1{
-    background-color: #1d1d1d00;
+    background-color: #8b8b8b00;
     grid-area: project1;
     border-radius: 10px;
     padding: 5px;
@@ -213,12 +216,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
       p{
         text-align: center;
+        
       }
 
   }
 
   #project2{
-    background-color: #1d1d1d00;
+    background-color: #8d8d8d00;
     grid-area: project2;
     border-radius: 10px;
     padding: 5px;
@@ -351,21 +355,23 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
+    background: rgb(130,11,123);
+    background: radial-gradient(circle, rgba(130,11,123,0.5097747717250962) 0%, rgba(140,111,186,0) 57%, rgba(148,187,233,0) 100%);
     margin: auto;
 
     p{
-      font-size: 16px;
-      background: rgba(255, 255, 255, 0.034);
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur( 3.5px );
-      -webkit-backdrop-filter: blur( 3.5px );
+      font-size: 1em;
+      background: rgba( 255, 255, 255, 0 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
       border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.329);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 15px;
     }
 
     h2{
-    font-size: 60px;
+    font-size: 4em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -392,21 +398,23 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
+    background: rgb(11,130,23);
+    background: radial-gradient(circle, rgba(11,130,23,0.5097747717250962) 0%, rgba(89,162,143,0) 57%, rgba(148,187,233,0) 100%);
     margin: auto;
 
     p{
-      font-size: 16px;
-      background: rgba(255, 255, 255, 0.034);
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur( 3.5px );
-      -webkit-backdrop-filter: blur( 3.5px );
+      font-size: 1em;
+      background: rgba( 255, 255, 255, 0 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
       border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.329);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 15px;
     }
 
     h2{
-    font-size: 60px;
+    font-size: 4em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -433,21 +441,23 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
+    background: rgb(241,251,83);
+    background: radial-gradient(circle, rgba(241,251,83,0.5097747717250962) 0%, rgba(190,216,166,0) 55%, rgba(148,187,233,0) 100%);
     margin: auto;
 
     p{
-      font-size: 16px;
-      background: rgba(255, 255, 255, 0.034);
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur( 3.5px );
-      -webkit-backdrop-filter: blur( 3.5px );
+      font-size: 1em;
+      background: rgba( 255, 255, 255, 0 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
       border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.329);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 15px;
     }
 
     h2{
-    font-size: 60px;
+    font-size: 4em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -473,21 +483,23 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
+    background: rgb(83,151,251);
+    background: radial-gradient(circle, rgba(83,151,251,0.5097747717250962) 0%, rgba(118,170,241,0) 54%, rgba(148,187,233,0) 100%);
     margin: auto;
 
     p{
-      font-size: 16px;
-      background: rgba(255, 255, 255, 0.034);
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur( 3.5px );
-      -webkit-backdrop-filter: blur( 3.5px );
+      font-size: 1em;
+      background: rgba( 255, 255, 255, 0 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
       border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.329);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 15px;
     }
 
     h2{
-    font-size: 60px;
+    font-size: 4em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -514,21 +526,23 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
+    background: rgb(131,83,251);
+    background: radial-gradient(circle, rgba(131,83,251,0.5097747717250962) 0%, rgba(140,138,241,0) 53%, rgba(148,187,233,0) 100%);
     margin: auto;
 
     p{
-      font-size: 16px;
-      background: rgba(255, 255, 255, 0.034);
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur( 3.5px );
-      -webkit-backdrop-filter: blur( 3.5px );
+      font-size: 1em;
+      background: rgba( 255, 255, 255, 0 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
       border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.329);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 15px;
     }
 
     h2{
-    font-size: 60px;
+    font-size: 4em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -555,21 +569,23 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
+    background: rgb(254,49,49);
+    background: radial-gradient(circle, rgba(254,49,49,0.5097747717250962) 0%, rgba(198,122,147,0) 53%, rgba(148,187,233,0) 100%);
     margin: auto;
 
     p{
-      font-size: 16px;
-      background: rgba(255, 255, 255, 0.034);
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-      backdrop-filter: blur( 3.5px );
-      -webkit-backdrop-filter: blur( 3.5px );
+      font-size: 1em;
+      background: rgba( 255, 255, 255, 0 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 6.5px );
+      -webkit-backdrop-filter: blur( 6.5px );
       border-radius: 10px;
-      border: 1px solid rgba(255, 255, 255, 0.329);
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 15px;
     }
 
     h2{
-    font-size: 60px;
+    font-size: 4em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -584,9 +600,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 @media only screen and (max-width:768px){
-  body{
+   body{
     background-image: url(../img/mobilebackground.jpg);
-  }
+    background-size: contain;
+ }
   .maincontent{
     display: grid;
     height: auto;
@@ -602,9 +619,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     "footer"
     "sitemap"
     "copyright";
-    grid-gap: 5em;
-    margin: 1em;
-    font-family:'Montserrat', sans-serif;
+    grid-gap: auto;
+    margin: auto;
+    font-family:'Poppins', sans-serif;
     
   
     #project1 {
@@ -856,6 +873,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     
     #copyright{
       grid-area: copyright;
+      margin: auto;
       text-align: center;
       opacity: .5;
     }
@@ -863,6 +881,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     #sitemap{
       grid-area: sitemap;
       text-align: center;
+      margin: auto;
       opacity: .5;
   
       ul{
@@ -883,6 +902,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     footer{
       background-color: #ffffff00;
       grid-area: footer;
+      margin: auto;
       padding: 10px;
       text-align: center;
       color: rgb(255, 255, 255);
