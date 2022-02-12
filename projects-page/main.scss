@@ -188,15 +188,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   display: grid;
   height: auto;
-  grid-template-columns: .7fr 1fr 1fr .7fr;
+  grid-template-columns: .5fr 1fr 1fr .5fr;
   grid-template-rows: 1fr 1fr 1fr .1fr .1fr .1fr;
   grid-template-areas: 
   "project1 project1 project1 project1"
   "project2 project2 project2 project2"
   "project3 project3 project3 project3"
-  "project4 project4 project4 project4"
-  "project5 project5 project5 project5"
-  "project6 project6 project6 project6"
   "footer footer footer footer"
   "sitemap sitemap sitemap sitemap"
   "copyright copyright copyright copyright";
@@ -253,54 +250,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   }
 
-  #project4{
-    background-color: #1d1d1d00;
-    grid-area: project4;
-    border-radius: 10px;
-    padding: 5px;
-
-      h2{
-        text-align: center;
-      }
-
-      p{
-        text-align: center;
-      }
-
-  }
-
-  #project5{
-    background-color: #1d1d1d00;
-    grid-area: project5;
-    border-radius: 10px;
-    padding: 5px;
-
-      h2{
-        text-align: center;
-      }
-
-      p{
-        text-align: center;
-      }
-
-  }
-
-  #project6{
-    background-color: #1d1d1d00;
-    grid-area: project6;
-    border-radius: 10px;
-    padding: 5px;
-
-      h2{
-        text-align: center;
-      }
-
-      p{
-        text-align: center;
-      }
-
-  }
-
   #copyright{
     grid-area: copyright;
     text-align: center;
@@ -344,20 +293,20 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 #project1 {
   display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-  "projectheaderandpara image"
-  "projectheaderandpara image";
-  grid-gap: 2em;
-  margin: 2em;
+  "projectheaderandpara"
+  "image";
+  grid-gap: 0em;
+  margin: auto;
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
-    background: rgb(130,11,123);
-    background: radial-gradient(circle, rgba(130,11,123,0.5097747717250962) 0%, rgba(140,111,186,0) 57%, rgba(148,187,233,0) 100%);
+    padding: 15px;
     margin: auto;
+    text-align: center;
 
     p{
       font-size: 1em;
@@ -371,7 +320,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
 
     h2{
-    font-size: 4em;
+    font-size: 3.25em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -381,26 +330,29 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: image;
   }
 }
 
 #project2{
   display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-  "projectheaderandpara image"
-  "projectheaderandpara image";
-  grid-gap: 2em;
-  margin: 2em;
+  "projectheaderandpara"
+  "image";
+  grid-gap: 0em;
+  margin: auto;
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
-    background: rgb(11,130,23);
-    background: radial-gradient(circle, rgba(11,130,23,0.5097747717250962) 0%, rgba(89,162,143,0) 57%, rgba(148,187,233,0) 100%);
+    padding: 15px;
     margin: auto;
+    text-align: center;
 
     p{
       font-size: 1em;
@@ -414,7 +366,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
 
     h2{
-    font-size: 4em;
+    font-size: 3.25em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -424,26 +376,29 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: image;
   }
 }
 
 #project3{
   display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas: 
-  "projectheaderandpara image"
-  "projectheaderandpara image";
-  grid-gap: 2em;
-  margin: 2em;
+  "projectheaderandpara"
+  "image";
+  grid-gap: 0em;
+  margin: auto;
   font-family:'Poppins', sans-serif;
 
   .projectheaderandpara{
-    background: rgb(241,251,83);
-    background: radial-gradient(circle, rgba(241,251,83,0.5097747717250962) 0%, rgba(190,216,166,0) 55%, rgba(148,187,233,0) 100%);
+    padding: 15px;
     margin: auto;
+    text-align: center;
 
     p{
       font-size: 1em;
@@ -457,7 +412,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
 
     h2{
-    font-size: 4em;
+    font-size: 3.25em;
     margin: auto;
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
@@ -467,137 +422,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   .image{
-    grid-area: image;
-  }
-}
-#project4{
-  display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "projectheaderandpara image"
-  "projectheaderandpara image";
-  grid-gap: 2em;
-  margin: 2em;
-  font-family:'Poppins', sans-serif;
-
-  .projectheaderandpara{
-    background: rgb(83,151,251);
-    background: radial-gradient(circle, rgba(83,151,251,0.5097747717250962) 0%, rgba(118,170,241,0) 54%, rgba(148,187,233,0) 100%);
-    margin: auto;
-
-    p{
-      font-size: 1em;
-      background: rgba( 255, 255, 255, 0 );
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-      backdrop-filter: blur( 6.5px );
-      -webkit-backdrop-filter: blur( 6.5px );
-      border-radius: 10px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
-      padding: 15px;
-    }
-
-    h2{
-    font-size: 4em;
-    margin: auto;
-    grid-area: projectheader;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #d8d8d8;
-    }
-  }
-
-  .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: image;
   }
 }
 
-#project5{
-  display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "projectheaderandpara image"
-  "projectheaderandpara image";
-  grid-gap: 2em;
-  margin: 2em;
-  font-family:'Poppins', sans-serif;
-
-  .projectheaderandpara{
-    background: rgb(131,83,251);
-    background: radial-gradient(circle, rgba(131,83,251,0.5097747717250962) 0%, rgba(140,138,241,0) 53%, rgba(148,187,233,0) 100%);
-    margin: auto;
-
-    p{
-      font-size: 1em;
-      background: rgba( 255, 255, 255, 0 );
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-      backdrop-filter: blur( 6.5px );
-      -webkit-backdrop-filter: blur( 6.5px );
-      border-radius: 10px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
-      padding: 15px;
-    }
-
-    h2{
-    font-size: 4em;
-    margin: auto;
-    grid-area: projectheader;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #d8d8d8;
-    }
-  }
-
-  .image{
-    grid-area: image;
-  }
-}
-
-#project6{
-  display: grid;
-  height: 80vh;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas: 
-  "projectheaderandpara image"
-  "projectheaderandpara image";
-  grid-gap: 2em;
-  margin: 2em;
-  font-family:'Poppins', sans-serif;
-
-  .projectheaderandpara{
-    background: rgb(254,49,49);
-    background: radial-gradient(circle, rgba(254,49,49,0.5097747717250962) 0%, rgba(198,122,147,0) 53%, rgba(148,187,233,0) 100%);
-    margin: auto;
-
-    p{
-      font-size: 1em;
-      background: rgba( 255, 255, 255, 0 );
-      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-      backdrop-filter: blur( 6.5px );
-      -webkit-backdrop-filter: blur( 6.5px );
-      border-radius: 10px;
-      border: 1px solid rgba( 255, 255, 255, 0.18 );
-      padding: 15px;
-    }
-
-    h2{
-    font-size: 4em;
-    margin: auto;
-    grid-area: projectheader;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #d8d8d8;
-    }
-  }
-
-  .image{
-    grid-area: image;
-  }
-}
 
 @media only screen and (max-width:768px){
    body{
@@ -608,14 +439,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     display: grid;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
     grid-template-areas: 
     "project1"
     "project2"
     "project3"
-    "project4"
-    "project5"
-    "project6"
     "footer"
     "sitemap"
     "copyright";
@@ -708,129 +536,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     }
     
     #project3{
-      display: grid;
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      "projectheaderandpara"
-      "image";
-      grid-gap: .001em;
-      margin: auto;
-      font-family:'Poppins', sans-serif;
-    
-      .projectheaderandpara{
-        margin: auto;
-    
-        p{
-          font-size: 16px;
-          background: rgba(255, 255, 255, 0.034);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-          backdrop-filter: blur( 3.5px );
-          -webkit-backdrop-filter: blur( 3.5px );
-          border-radius: 10px;
-          border: 1px solid rgba(255, 255, 255, 0.329);
-          padding: 15px;
-        }
-    
-        h2{
-        font-size: 42px;
-        margin: auto;
-        grid-area: projectheader;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #d8d8d8;
-        }
-      }
-    
-      .image{
-        grid-area: image;
-      }
-    }
-
-    #project4{
-      display: grid;
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      "projectheaderandpara"
-      "image";
-      grid-gap: .001em;
-      margin: auto;
-      font-family:'Poppins', sans-serif;
-    
-      .projectheaderandpara{
-        margin: auto;
-    
-        p{
-          font-size: 16px;
-          background: rgba(255, 255, 255, 0.034);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-          backdrop-filter: blur( 3.5px );
-          -webkit-backdrop-filter: blur( 3.5px );
-          border-radius: 10px;
-          border: 1px solid rgba(255, 255, 255, 0.329);
-          padding: 15px;
-        }
-    
-        h2{
-        font-size: 42px;
-        margin: auto;
-        grid-area: projectheader;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #d8d8d8;
-        }
-      }
-    
-      .image{
-        grid-area: image;
-      }
-    }
-    
-    #project5{
-      display: grid;
-      height: auto;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr;
-      grid-template-areas: 
-      "projectheaderandpara"
-      "image";
-      grid-gap: .001em;
-      margin: auto;
-      font-family:'Poppins', sans-serif;
-    
-      .projectheaderandpara{
-        margin: auto;
-    
-        p{
-          font-size: 16px;
-          background: rgba(255, 255, 255, 0.034);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-          backdrop-filter: blur( 3.5px );
-          -webkit-backdrop-filter: blur( 3.5px );
-          border-radius: 10px;
-          border: 1px solid rgba(255, 255, 255, 0.329);
-          padding: 15px;
-        }
-    
-        h2{
-        font-size: 42px;
-        margin: auto;
-        grid-area: projectheader;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: 2px;
-        -webkit-text-stroke-color: #d8d8d8;
-        }
-      }
-    
-      .image{
-        grid-area: image;
-      }
-    }
-    
-    #project6{
       display: grid;
       height: auto;
       grid-template-columns: 1fr;
