@@ -219,7 +219,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   -ms-grid-rows: 1fr 1fr 1fr .1fr;
       grid-template-rows: 1fr 1fr 1fr .1fr;
       grid-template-areas: ". project1 project1 ." ". project2 project2 ." ". project3 project3 ." ". footer footer .";
-  grid-gap: auto;
+  grid-gap: 1em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -331,13 +331,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 #project1 {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  height: auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "projectheaderandpara" "image";
-  grid-gap: 0em;
+  grid-gap: 1em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -387,13 +387,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 #project2 {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  height: auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "projectheaderandpara" "image";
-  grid-gap: 0em;
+  grid-gap: 1em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -443,13 +443,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 #project3 {
   display: -ms-grid;
   display: grid;
-  height: 100vh;
+  height: auto;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "projectheaderandpara" "image";
-  grid-gap: 0em;
+  grid-gap: 1em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
