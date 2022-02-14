@@ -15,9 +15,9 @@ body{
 .hero-image{
   position: relative;
   height: 90vh;
-  background-image: url(../img/moonrotate.gif);
+  background-image: url(../img/galaxyabout.jpg);
   background-position: center center;
-  background-size: contain; 
+  background-size: cover;
   background-repeat: no-repeat;
 
     .container{
@@ -29,6 +29,13 @@ body{
       color: #ffffff;
       font-weight: 700;
       text-transform: uppercase;
+      background: rgba( 12, 12, 12, 0.85 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      padding: 20px;
 
         h1{
           font-size: 36px;
@@ -183,25 +190,18 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 /** Main content **/
 
- body{
-  background-image: url(../img/mobilebackground.jpg);
-  background-size: contain;
- }
-
 .maincontent{
   display: grid;
   height: auto;
   grid-template-columns:  .5fr 1fr .5fr;
-  grid-template-rows: 1fr 1fr .1fr .1fr .1fr;
+  grid-template-rows: 1fr 1fr .1fr;
   grid-template-areas: 
   "sidebar1 aboutbox sidebar2"
   "sidebar1 spaceart sidebar2"
-  "footer footer footer"
-  "sitemap sitemap sitemap"
-  "copyright copyright copyright";
-  grid-gap: 0.5em;
-  margin: 0.5em;
-  font-family:'Montserrat', sans-serif;
+  "footer footer footer";
+  grid-gap: .25em;
+  margin: auto;
+  font-family:'Poppins', sans-serif;
 
   .sidebar1{
     grid-area: sidebar1;
@@ -233,44 +233,63 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     padding: 15px;
   }
 
-  #copyright{
-    grid-area: copyright;
-    text-align: center;
-    opacity: .5;
-  }
-
-  #sitemap{
-    grid-area: sitemap;
-    text-align: center;
-    opacity: .5;
-
-    ul{
-      text-align: center;
-      padding-left: 0;
-
-        li{
-          list-style: none;
-
-            a{
-              text-decoration: none;
-              color: #1a6fbe;
-            }
-        }
-    }
-  }
-
   footer{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr .1fr;
+    grid-template-areas: 
+    "links"
+    "sitemap"
+    "copyright";
+    grid-gap: 0em;
+    margin: 0em;
+    font-family:'Poppins', sans-serif;
     background-color: #ffffff00;
     grid-area: footer;
-    padding: 10px;
     text-align: center;
     color: rgb(255, 255, 255);
-    opacity: .5;
+    padding: 0%;
     
+    
+    .footerr{
+      margin: auto;
+    }
 
-      .links{
-        padding: 1%;
+    #sitemap{
+      text-align: center;
+      grid-area: sitemap;
+      margin: auto;
+  
+      ul{
+        text-align: center;
+        padding-left: 0;
+        
+  
+          li{
+            list-style: none;
+  
+              a{
+                text-decoration: none;
+                font-size: large;
+                color: #cfcfcf;
+                
+                margin: auto;
+              }
+          }
       }
+    }
+
+    #copyright{
+      text-align: center;
+      grid-area: copyright;
+      margin: auto;
+    }
+
+    .links{
+      grid-area: links;
+      margin: 0;
+    }
   }
 }
 
@@ -361,20 +380,15 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 @media only screen and (max-width:768px){
-  body{
-    background-image: url(../img/mobilebackground.jpg);
-  }
   .maincontent{
     display: grid;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr;
     grid-template-areas: 
     "aboutbox"
     "spaceart"
-    "footer"
-    "sitemap"
-    "copyright";
+    "footer";
     grid-gap: 0;
     margin: auto;
     font-family:'Poppins', sans-serif;
@@ -468,13 +482,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     #copyright{
       grid-area: copyright;
       text-align: center;
-      opacity: .5;
+      
     }
   
     #sitemap{
       grid-area: sitemap;
       text-align: center;
-      opacity: .5;
+      
   
       ul{
         text-align: center;
@@ -497,7 +511,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       padding: 10px;
       text-align: center;
       color: rgb(255, 255, 255);
-      opacity: .5;
+      
       
   
         .links{

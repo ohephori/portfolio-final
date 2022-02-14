@@ -7,8 +7,7 @@ body{
     color: #d8d8d8;
     margin: 0;
     padding: 0;
-    background-image: url(../img/mobilebackground.jpg);
-    background-size: contain;
+    background-color: #0c0c0c;
 }
 
 /** Fully responsive hero. **/
@@ -16,9 +15,9 @@ body{
 .hero-image{
   position: relative;
   height: 90vh;
-  background-image: url(../img/moonrotate.gif);
+  background-image: url(../img/galaxyprojects.jpg);
   background-position: center center;
-  background-size: contain; 
+  background-size: cover;
   background-repeat: no-repeat;
 
     .container{
@@ -30,9 +29,16 @@ body{
       color: #ffffff;
       font-weight: 700;
       text-transform: uppercase;
+      background: rgba( 12, 12, 12, 0.85 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      padding: 20px;
 
         h1{
-          font-size: 36px;
+          font-size: 30px;
           letter-spacing: 0.2em;
           margin: 0;
 
@@ -44,7 +50,7 @@ body{
         }
 
         .des{
-          margin: 20px;
+          margin: 15px;
           display: block;
           font-size: 20px;
           text-shadow: 0 0 10px black;
@@ -188,17 +194,15 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   display: grid;
   height: auto;
-  grid-template-columns: .5fr 1fr 1fr .5fr;
-  grid-template-rows: 1fr 1fr 1fr .1fr .1fr .1fr;
+  grid-template-columns: .75fr 1fr 1fr .75fr;
+  grid-template-rows: 1fr 1fr 1fr .1fr;
   grid-template-areas: 
-  "project1 project1 project1 project1"
-  "project2 project2 project2 project2"
-  "project3 project3 project3 project3"
-  "footer footer footer footer"
-  "sitemap sitemap sitemap sitemap"
-  "copyright copyright copyright copyright";
-  grid-gap: 2.5em;
-  margin: 9.5em;
+  ". project1 project1 ."
+  ". project2 project2 ."
+  ". project3 project3 ."
+  ". footer footer .";
+  grid-gap: auto;
+  margin: auto;
   font-family:'Poppins', sans-serif;
 
   #project1{
@@ -250,44 +254,52 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
   }
 
-  #copyright{
-    grid-area: copyright;
-    text-align: center;
-    opacity: .5;
-  }
-
-  #sitemap{
-    grid-area: sitemap;
-    text-align: center;
-    opacity: .5;
-
-    ul{
-      text-align: center;
-      padding-left: 0;
-
-        li{
-          list-style: none;
-
-            a{
-              text-decoration: none;
-              color: #1a6fbe;
-            }
-        }
-    }
-  }
-
   footer{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr .1fr;
+    grid-template-areas: 
+    "links"
+    "sitemap"
+    "copyright";
+    grid-gap: 0em;
+    margin: 0em;
+    font-family:'Poppins', sans-serif;
     background-color: #ffffff00;
     grid-area: footer;
-    padding: 10px;
     text-align: center;
     color: rgb(255, 255, 255);
-    opacity: .5;
+    padding: 0%;
     
+    
+    .footerr{
+      margin: auto;
+    }
 
-      .links{
-        padding: 1%;
+    #sitemap{
+      text-align: center;
+      grid-area: sitemap;
+      margin: auto;
+  
+      ul{
+        text-align: center;
+        padding-left: 0;
+        
+  
+          li{
+            list-style: none;
+  
+              a{
+                text-decoration: none;
+                font-size: large;
+                color: #cfcfcf;
+                
+                margin: auto;
+              }
+          }
       }
+    }
   }
 }
 
@@ -431,22 +443,17 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 
 @media only screen and (max-width:768px){
-   body{
-    background-image: url(../img/mobilebackground.jpg);
-    background-size: contain;
- }
+   
   .maincontent{
     display: grid;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
     grid-template-areas: 
     "project1"
     "project2"
     "project3"
-    "footer"
-    "sitemap"
-    "copyright";
+    "footer";
     grid-gap: auto;
     margin: auto;
     font-family:'Poppins', sans-serif;
@@ -576,51 +583,55 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       }
     }
     
-    #copyright{
-      grid-area: copyright;
-      margin: auto;
-      text-align: center;
-      opacity: .5;
-    }
-  
-    #sitemap{
-      grid-area: sitemap;
-      text-align: center;
-      margin: auto;
-      opacity: .5;
-  
-      ul{
-        text-align: center;
-        padding-left: 0;
-  
-          li{
-            list-style: none;
-  
-              a{
-                text-decoration: none;
-                color: #1a6fbe;
-              }
-          }
-      }
-    }
-  
     footer{
+      display: grid;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr .1fr;
+      grid-template-areas: 
+      "links"
+      "sitemap"
+      "copyright";
+      grid-gap: 0em;
+      margin: 0em;
+      font-family:'Poppins', sans-serif;
       background-color: #ffffff00;
       grid-area: footer;
-      margin: auto;
-      padding: 10px;
       text-align: center;
       color: rgb(255, 255, 255);
-      opacity: .5;
+      padding: 0%;
       
+      
+      .footerr{
+        margin: auto;
+      }
   
-        .links{
-          padding: 1%;
-        }
+      #sitemap{
+        text-align: center;
+        grid-area: sitemap;
+        margin: auto;
+    
+        ul{
+          text-align: center;
+          padding-left: 0;
+          
+    
+            li{
+              list-style: none;
+    
+                a{
+                  text-decoration: none;
+                  font-size: large;
+                  color: #cfcfcf;
+                  
+                  margin: auto;
+                }
+            }
+          }
     }
   }
 }
-
+}
 /** Check out buttons **/
 
 .buttoncontainer{

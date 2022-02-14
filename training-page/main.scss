@@ -15,9 +15,9 @@ body{
 .hero-image{
 position: relative;
 height: 90vh;
-background-image: url(../img/moonrotate.gif);
+background-image: url(../img/galaxytraining.jpg);
 background-position: center center;
-background-size: contain; 
+background-size: cover;
 background-repeat: no-repeat;
 
   .container{
@@ -29,6 +29,13 @@ background-repeat: no-repeat;
     color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
+    background: rgba( 12, 12, 12, 0.85 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
 
       h1{
         font-size: 36px;
@@ -183,24 +190,18 @@ opacity: 0;
 
 /** Main content **/
 
-body{
-  background-image: url(../img/mobilebackground.jpg);
-  background-size: contain;
- }
-
 .maincontent{
   display: grid;
   height: auto;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+  grid-template-rows: .1fr .1fr .1fr;
   grid-template-areas: 
   "sidebar1 training training sidebar2"
   "sidebar1 myprocess myprocess sidebar2"
   "sidebar1 footer footer sidebar2"
-  "sidebar1 sitemap sitemap sidebar2"
-  "sidebar1 copyright copyright sidebar2";
-  grid-gap: 4.5em;
-  margin: 0.5em;
+  ;
+  grid-gap: .25em;
+  margin: auto;
   font-family:'Poppins', sans-serif;
 
   .sidebar1{
@@ -243,45 +244,54 @@ body{
     }
   }
 
-  #copyright{
-    grid-area: copyright;
+  footer{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr .1fr;
+    grid-template-areas: 
+    "links"
+    "sitemap"
+    "copyright";
+    grid-gap: 0em;
+    margin: 0em;
+    font-family:'Poppins', sans-serif;
+    background-color: #ffffff00;
+    grid-area: footer;
     text-align: center;
-    opacity: .5;
-  }
+    color: rgb(255, 255, 255);
+    padding: 0%;
+    
+    
+    .footerr{
+      margin: auto;
+    }
 
-  #sitemap{
-    grid-area: sitemap;
-    text-align: center;
-    opacity: .5;
-
-    ul{
+    #sitemap{
       text-align: center;
-      padding-left: 0;
-
-        li{
-          list-style: none;
-
-            a{
-              text-decoration: none;
-              color: #1a6fbe;
-            }
-        }
+      grid-area: sitemap;
+      margin: auto;
+  
+      ul{
+        text-align: center;
+        padding-left: 0;
+        
+  
+          li{
+            list-style: none;
+  
+              a{
+                text-decoration: none;
+                font-size: large;
+                color: #cfcfcf;
+                
+                margin: auto;
+              }
+          }
+      }
     }
   }
 
-  footer{
-    background-color: #ffffff00;
-    grid-area: footer;
-    padding: 10px;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    opacity: .5;
-    
-
-      .links{
-        padding: 1%;
-      }
-  }
 }
 
 #training{
@@ -343,13 +353,11 @@ body{
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr .1fr .1fr;
+    grid-template-rows: 1fr 1fr .1fr;
     grid-template-areas: 
     "training"
     "myprocess"
-    "footer"
-    "sitemap"
-    "copyright";
+    "footer";
     grid-gap: 0;
     margin: auto;
     font-family:'Poppins', sans-serif;
@@ -436,13 +444,13 @@ body{
     #copyright{
       grid-area: copyright;
       text-align: center;
-      opacity: .5;
+      
     }
   
     #sitemap{
       grid-area: sitemap;
       text-align: center;
-      opacity: .5;
+      
   
       ul{
         text-align: center;
@@ -465,7 +473,7 @@ body{
       padding: 10px;
       text-align: center;
       color: rgb(255, 255, 255);
-      opacity: .5;
+      
       
   
         .links{

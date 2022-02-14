@@ -12,9 +12,9 @@ body {
 .hero-image {
   position: relative;
   height: 90vh;
-  background-image: url(../img/moonrotate.gif);
+  background-image: url(../img/galaxycontact.jpg);
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -28,6 +28,14 @@ body {
   color: #ffffff;
   font-weight: 700;
   text-transform: uppercase;
+  background: rgba(12, 12, 12, 0.85);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
 }
 
 .hero-image .container h1 {
@@ -201,20 +209,15 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 /** Main content **/
-body {
-  background-image: url(../img/mobilebackground.jpg);
-  background-size: contain;
-}
-
 .maincontent {
   display: -ms-grid;
   display: grid;
   height: auto;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: .1fr 1fr .1fr .1fr .1fr .1fr;
-      grid-template-rows: .1fr 1fr .1fr .1fr .1fr .1fr;
-      grid-template-areas: "footer contact2" "contact contact2" ". contact2" "sitemap sitemap" "copyright copyright";
+  -ms-grid-rows: .1fr 1fr .1fr .1fr;
+      grid-template-rows: .1fr 1fr .1fr .1fr;
+      grid-template-areas: "footer contact2" "contact contact2" ". contact2";
   grid-gap: 0.5em;
   margin: 0.5em;
   font-family: 'Montserrat', sans-serif;
@@ -246,18 +249,12 @@ body {
 }
 
 .maincontent #copyright {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: copyright;
   text-align: center;
   opacity: .5;
 }
 
 .maincontent #sitemap {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: sitemap;
   text-align: center;
   opacity: .5;
@@ -292,18 +289,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-  body {
-    background-image: url(../img/mobilebackground.jpg);
-  }
   .maincontent {
     display: -ms-grid;
     display: grid;
     height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: .1fr 1fr 1fr .1fr .1fr;
-        grid-template-rows: .1fr 1fr 1fr .1fr .1fr;
-        grid-template-areas: "footer"  "contact" "contact2" "sitemap" "copyright";
+    -ms-grid-rows: .1fr 1fr 1fr;
+        grid-template-rows: .1fr 1fr 1fr;
+        grid-template-areas: "footer"  "contact" "contact2";
     grid-gap: 0.5em;
     margin: 0.5em;
     font-family: 'Montserrat', sans-serif;
@@ -312,6 +306,15 @@ body {
     -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: contact2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .maincontent #contact {
     background-color: #1d1d1d00;
@@ -329,18 +332,12 @@ body {
     text-align: center;
   }
   .maincontent #copyright {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
     grid-area: copyright;
     text-align: center;
-    opacity: .5;
   }
   .maincontent #sitemap {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
     grid-area: sitemap;
     text-align: center;
-    opacity: .5;
   }
   .maincontent #sitemap ul {
     text-align: center;

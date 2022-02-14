@@ -15,6 +15,9 @@ body{
 .hero-image{
   position: relative;
   height: 60vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   
 
     .container{
@@ -26,6 +29,13 @@ body{
       color: #ffffff;
       font-weight: 700;
       text-transform: uppercase;
+      background: rgba( 12, 12, 12, 0.85 );
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+      backdrop-filter: blur( 4px );
+      -webkit-backdrop-filter: blur( 4px );
+      border-radius: 10px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      padding: 20px;
 
         h1{
           font-size: 36px;
@@ -180,23 +190,19 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 /** Main content **/
 
- body{
-  background-image: url(../img/mobilebackground.jpg);
-  background-size: contain;
- }
+ 
 
 .maincontent{
   display: grid;
   height: auto;
   grid-template-columns:  .1fr 1fr .1fr;
-  grid-template-rows: .3fr .3fr .3fr .1fr .1fr .1fr;
+  grid-template-rows: .3fr .3fr .3fr .1fr;
   grid-template-areas: 
   "sidebar1 aboutbox sidebar2"
   "sidebar1 spaceart sidebar2"
   "sidebar1 finalproject sidebar2"
   "footer footer footer"
-  "sitemap sitemap sitemap"
-  "copyright copyright copyright";
+  ;
   grid-gap: 2.5em;
   margin: 0.5em;
   font-family:'Poppins', sans-serif;
@@ -210,7 +216,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 15px;
-    text-align: center;
+    text-align: left;
 
     h2{
       font-size: 3em;
@@ -251,44 +257,52 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     padding: 15px;
   }
 
-  #copyright{
-    grid-area: copyright;
-    text-align: center;
-    opacity: .5;
-  }
-
-  #sitemap{
-    grid-area: sitemap;
-    text-align: center;
-    opacity: .5;
-
-    ul{
-      text-align: center;
-      padding-left: 0;
-
-        li{
-          list-style: none;
-
-            a{
-              text-decoration: none;
-              color: #1a6fbe;
-            }
-        }
-    }
-  }
-
   footer{
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr .1fr;
+    grid-template-areas: 
+    "links"
+    "sitemap"
+    "copyright";
+    grid-gap: 0em;
+    margin: 0em;
+    font-family:'Poppins', sans-serif;
     background-color: #ffffff00;
     grid-area: footer;
-    padding: 10px;
     text-align: center;
     color: rgb(255, 255, 255);
-    opacity: .5;
+    padding: 0%;
     
+    
+    .footerr{
+      margin: auto;
+    }
 
-      .links{
-        padding: 1%;
+    #sitemap{
+      text-align: center;
+      grid-area: sitemap;
+      margin: auto;
+  
+      ul{
+        text-align: center;
+        padding-left: 0;
+        
+  
+          li{
+            list-style: none;
+  
+              a{
+                text-decoration: none;
+                font-size: large;
+                color: #cfcfcf;
+                
+                margin: auto;
+              }
+          }
       }
+    }
   }
 }
 
@@ -320,7 +334,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     font-size: 1em;
     margin: auto;
     grid-area: about2;
-    text-align: center;
+    text-align: left;
     color: #d8d8d8;
 
   }
@@ -379,21 +393,17 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 @media only screen and (max-width:768px){
-  body{
-    background-image: url(../img/mobilebackground.jpg);
-  }
+ 
   .maincontent{
     display: grid;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr;
     grid-template-areas: 
     "aboutbox"
     "spaceart"
     "finalproject"
-    "footer"
-    "sitemap"
-    "copyright";
+    "footer";
     grid-gap: 0;
     margin: auto;
     font-family:'Poppins', sans-serif;
@@ -407,11 +417,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       border-radius: 10px;
       border: 1px solid rgba( 255, 255, 255, 0.18 );
       padding: 15px;
-      text-align: center;
+      text-align: left;
   
       h2{
         font-size: 3em;
-      text-align: center;
+        text-align: left;
       -webkit-text-fill-color: transparent;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #d8d8d8;
@@ -503,85 +513,52 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       }
     }
 
-    #copyright{
-      grid-area: copyright;
-      text-align: center;
-      opacity: .5;
-    }
-  
-    #sitemap{
-      grid-area: sitemap;
-      text-align: center;
-      opacity: .5;
-  
-      ul{
-        text-align: center;
-        padding-left: 0;
-  
-          li{
-            list-style: none;
-  
-              a{
-                text-decoration: none;
-                color: #1a6fbe;
-              }
-          }
-      }
-    }
-  
     footer{
+      display: grid;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr .1fr;
+      grid-template-areas: 
+      "links"
+      "sitemap"
+      "copyright";
+      grid-gap: 0em;
+      margin: 0em;
+      font-family:'Poppins', sans-serif;
       background-color: #ffffff00;
       grid-area: footer;
-      padding: 10px;
       text-align: center;
       color: rgb(255, 255, 255);
-      opacity: .5;
+      padding: 0%;
       
+      
+      .footerr{
+        margin: auto;
+      }
   
-        .links{
-          padding: 1%;
-        }
-    }
-  }
-}
-
-/** Check out buttons **/
-
-.buttoncontainer{
-  height: 100px;
-  position: relative;
-
-    .center{
-      margin: 0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-
-      a.button1{
-        display:inline-block;
-        padding:0.35em 1.2em;
-        border:0.1em solid #FFFFFF;
-        margin:0 0.3em 0.3em 0;
-        border-radius:0.12em;
-        box-sizing: border-box;
-        text-decoration:none;
-        font-family:'Roboto',sans-serif;
-        font-weight:300;
-        color:#FFFFFF;
-        text-align:center;
-        transition: all 0.2s;
-        }
-        a.button1:hover{
-        color:#000000;
-        background-color:#FFFFFF;
-        }
-        @media all and (max-width:30em){
-        a.button1{
-        display:block;
-        margin:0.4em auto;
+      #sitemap{
+        text-align: center;
+        grid-area: sitemap;
+        margin: auto;
+    
+        ul{
+          text-align: center;
+          padding-left: 0;
+          
+    
+            li{
+              list-style: none;
+    
+                a{
+                  text-decoration: none;
+                  font-size: large;
+                  color: #cfcfcf;
+                  
+                  margin: auto;
+                }
+            }
         }
       }
     }
+  }
 }
