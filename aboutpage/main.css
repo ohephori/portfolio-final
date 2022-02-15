@@ -216,30 +216,30 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   height: auto;
   -ms-grid-columns: .5fr 1fr .5fr;
       grid-template-columns: .5fr 1fr .5fr;
-  -ms-grid-rows: 1fr 1fr .1fr;
-      grid-template-rows: 1fr 1fr .1fr;
-      grid-template-areas: "sidebar1 aboutbox sidebar2" "sidebar1 spaceart sidebar2" "footer footer footer";
+  -ms-grid-rows: .1fr 1fr 1fr .1fr;
+      grid-template-rows: .1fr 1fr 1fr .1fr;
+      grid-template-areas: ". . ." "sidebar1 aboutbox sidebar2" "sidebar1 spaceart sidebar2" "footer footer footer";
   grid-gap: .25em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
 
 .maincontent .sidebar1 {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: sidebar1;
 }
 
 .maincontent .sidebar2 {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 3;
   grid-area: sidebar2;
 }
 
 .maincontent .spaceart {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: spaceart;
   background: rgba(255, 255, 255, 0);
@@ -253,7 +253,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .maincontent #aboutbox {
-  -ms-grid-row: 1;
+  -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: aboutbox;
   background: rgba(255, 255, 255, 0);
@@ -279,7 +279,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   margin: 0em;
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff00;
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: footer;
@@ -380,7 +380,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .spaceart {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: spaceart;
 }

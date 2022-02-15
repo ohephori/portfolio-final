@@ -194,8 +194,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   display: grid;
   height: auto;
   grid-template-columns:  .5fr 1fr .5fr;
-  grid-template-rows: 1fr 1fr .1fr;
+  grid-template-rows: .1fr 1fr 1fr .1fr;
   grid-template-areas: 
+  ". . ."
   "sidebar1 aboutbox sidebar2"
   "sidebar1 spaceart sidebar2"
   "footer footer footer";
