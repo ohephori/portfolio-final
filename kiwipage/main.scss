@@ -217,6 +217,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 15px;
     text-align: left;
+  
 
     h2{
       font-size: 3em;
@@ -224,6 +225,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #d8d8d8;
+    }
+    
+    .img{
+      display: flex;
+      justify-content:center;
+      align-items: center;
     }
   }
 

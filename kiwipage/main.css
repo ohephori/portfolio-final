@@ -246,6 +246,18 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   -webkit-text-stroke-color: #d8d8d8;
 }
 
+.maincontent .finalproject .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .maincontent .sidebar1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 3;
