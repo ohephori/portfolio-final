@@ -195,8 +195,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   display: grid;
   height: auto;
   grid-template-columns: .75fr 1fr 1fr .75fr;
-  grid-template-rows: 1fr 1fr 1fr .1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr .1fr;
   grid-template-areas: 
+  ". project4 project4 ."
   ". project1 project1 ."
   ". project2 project2 ."
   ". project3 project3 ."
@@ -221,7 +222,22 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       }
 
   }
+  #project4{
+    background-color: #8b8b8b00;
+    grid-area: project4;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+      h2{
+        text-align: center;
+      }
 
+      p{
+        text-align: center;
+        
+      }
+
+  }
   #project2{
     background-color: #8d8d8d00;
     grid-area: project2;
@@ -348,7 +364,47 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: image;
   }
 }
+#project4 {
+  display: grid;
+  height: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "projectheaderandpara"
+  "image";
+  grid-gap: .001em;
+  margin: auto;
+  font-family:'Poppins', sans-serif;
+  grid-area: project4;
 
+  .projectheaderandpara{
+    margin: auto;
+
+    p{
+      font-size: 16px;
+      background: rgba(255, 255, 255, 0.034);
+      box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
+      backdrop-filter: blur( 3.5px );
+      -webkit-backdrop-filter: blur( 3.5px );
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.329);
+      padding: 15px;
+    }
+
+    h2{
+    font-size: 42px;
+    margin: auto;
+    grid-area: projectheader;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #d8d8d8;
+    }
+  }
+
+  .image{
+    grid-area: image;
+  }
+}
 #project2{
   display: grid;
   height: auto;
@@ -448,8 +504,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     display: grid;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
     grid-template-areas: 
+    "project4"
     "project1"
     "project2"
     "project3"
@@ -458,7 +515,48 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     margin: auto;
     font-family:'Poppins', sans-serif;
     
-  
+    #project4 {
+      display: grid;
+      height: auto;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: 
+      "projectheaderandpara"
+      "image";
+      grid-gap: .001em;
+      margin: auto;
+      font-family:'Poppins', sans-serif;
+      grid-area: project4;
+    
+      .projectheaderandpara{
+        margin: auto;
+    
+        p{
+          font-size: 16px;
+          background: rgba(255, 255, 255, 0.034);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
+          backdrop-filter: blur( 3.5px );
+          -webkit-backdrop-filter: blur( 3.5px );
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.329);
+          padding: 15px;
+        }
+    
+        h2{
+        font-size: 42px;
+        margin: auto;
+        grid-area: projectheader;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #d8d8d8;
+        }
+      }
+    
+      .image{
+        grid-area: image;
+      }
+    }
+
     #project1 {
       display: grid;
       height: auto;
