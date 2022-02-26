@@ -214,8 +214,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   display: -ms-grid;
   display: grid;
   height: auto;
-  -ms-grid-columns: .75fr 1fr 1fr .75fr;
-      grid-template-columns: .75fr 1fr 1fr .75fr;
+  -ms-grid-columns: .65fr 1fr 1fr .65fr;
+      grid-template-columns: .65fr 1fr 1fr .65fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr .1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr .1fr;
       grid-template-areas: ". project4 project4 ." ". project1 project1 ." ". project2 project2 ." ". project3 project3 ." ". footer footer .";
@@ -231,7 +231,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   -ms-grid-column-span: 2;
   grid-area: project1;
   border-radius: 10px;
-  padding: 5px;
+  text-align: center;
+  background: #ff8dfc;
+  background: linear-gradient(60deg, #ff8dfc 0%, #559fff 100%);
+  padding: 30px;
+  color: #0c0c0c;
 }
 
 .maincontent #project1 h2 {
@@ -240,6 +244,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project1 p {
   text-align: center;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .maincontent #project4 {
@@ -249,8 +259,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   -ms-grid-column-span: 2;
   grid-area: project4;
   border-radius: 10px;
-  padding: 5px;
   text-align: center;
+  background: #9660eb;
+  background: linear-gradient(60deg, #9660eb 0%, #ffab55 100%);
+  padding: 30px;
+  color: #0c0c0c;
 }
 
 .maincontent #project4 h2 {
@@ -259,16 +272,26 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project4 p {
   text-align: center;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .maincontent #project2 {
-  background-color: #8d8d8d00;
+  background-color: #8b8b8b00;
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: project2;
   border-radius: 10px;
-  padding: 5px;
+  text-align: center;
+  background: #fe4242;
+  background: linear-gradient(60deg, #fe4242 0%, #9950ff 100%);
+  padding: 30px;
+  color: #0c0c0c;
 }
 
 .maincontent #project2 h2 {
@@ -277,16 +300,26 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project2 p {
   text-align: center;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .maincontent #project3 {
-  background-color: #1d1d1d00;
+  background-color: #8b8b8b00;
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: project3;
   border-radius: 10px;
-  padding: 5px;
+  text-align: center;
+  background: #fffa90;
+  background: linear-gradient(60deg, #fffa90 0%, #50b7ff 100%);
+  padding: 30px;
+  color: #0c0c0c;
 }
 
 .maincontent #project3 h2 {
@@ -295,6 +328,12 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project3 p {
   text-align: center;
+  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .maincontent footer {
@@ -369,13 +408,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 #project1 .projectheaderandpara p {
   font-size: 1em;
-  background: rgba(255, 255, 255, 0);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 15px;
 }
 
@@ -385,7 +417,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #d8d8d8;
+  -webkit-text-stroke-color: #0c0c0c;
 }
 
 #project1 .image {
@@ -412,41 +444,41 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       grid-template-areas: "projectheaderandpara" "image";
-  grid-gap: .001em;
+  grid-gap: 1em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: project4;
 }
 
 #project4 .projectheaderandpara {
+  padding: 15px;
   margin: auto;
+  text-align: center;
 }
 
 #project4 .projectheaderandpara p {
-  font-size: 16px;
-  background: rgba(255, 255, 255, 0.034);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.329);
+  font-size: 1em;
   padding: 15px;
 }
 
 #project4 .projectheaderandpara h2 {
-  font-size: 42px;
+  font-size: 3.25em;
   margin: auto;
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #d8d8d8;
+  -webkit-text-stroke-color: #0c0c0c;
 }
 
 #project4 .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: image;
@@ -474,13 +506,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 #project2 .projectheaderandpara p {
   font-size: 1em;
-  background: rgba(255, 255, 255, 0);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 15px;
 }
 
@@ -490,7 +515,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #d8d8d8;
+  -webkit-text-stroke-color: #0c0c0c;
 }
 
 #project2 .image {
@@ -530,13 +555,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 #project3 .projectheaderandpara p {
   font-size: 1em;
-  background: rgba(255, 255, 255, 0);
-  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
-  backdrop-filter: blur(6.5px);
-  -webkit-backdrop-filter: blur(6.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 15px;
 }
 
@@ -546,7 +564,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #d8d8d8;
+  -webkit-text-stroke-color: #0c0c0c;
 }
 
 #project3 .image {
@@ -577,169 +595,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-gap: auto;
     margin: auto;
     font-family: 'Poppins', sans-serif;
-  }
-  .maincontent #project4 {
-    display: -ms-grid;
-    display: grid;
-    height: auto;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "projectheaderandpara" "image";
-    grid-gap: .001em;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: project4;
-  }
-  .maincontent #project4 .projectheaderandpara {
-    margin: auto;
-  }
-  .maincontent #project4 .projectheaderandpara p {
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.034);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-            box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.329);
-    padding: 15px;
-  }
-  .maincontent #project4 .projectheaderandpara h2 {
-    font-size: 42px;
-    margin: auto;
-    grid-area: projectheader;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #d8d8d8;
-  }
-  .maincontent #project4 .image {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: image;
-  }
-  .maincontent #project1 {
-    display: -ms-grid;
-    display: grid;
-    height: auto;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "projectheaderandpara" "image";
-    grid-gap: .001em;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-  }
-  .maincontent #project1 .projectheaderandpara {
-    margin: auto;
-  }
-  .maincontent #project1 .projectheaderandpara p {
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.034);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-            box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.329);
-    padding: 15px;
-  }
-  .maincontent #project1 .projectheaderandpara h2 {
-    font-size: 42px;
-    margin: auto;
-    grid-area: projectheader;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #d8d8d8;
-  }
-  .maincontent #project1 .image {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: image;
-  }
-  .maincontent #project2 {
-    display: -ms-grid;
-    display: grid;
-    height: auto;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "projectheaderandpara" "image";
-    grid-gap: .001em;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-  }
-  .maincontent #project2 .projectheaderandpara {
-    margin: auto;
-  }
-  .maincontent #project2 .projectheaderandpara p {
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.034);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-            box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.329);
-    padding: 15px;
-  }
-  .maincontent #project2 .projectheaderandpara h2 {
-    font-size: 42px;
-    margin: auto;
-    grid-area: projectheader;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #d8d8d8;
-  }
-  .maincontent #project2 .image {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: image;
-  }
-  .maincontent #project3 {
-    display: -ms-grid;
-    display: grid;
-    height: auto;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "projectheaderandpara" "image";
-    grid-gap: .001em;
-    margin: auto;
-    font-family: 'Poppins', sans-serif;
-  }
-  .maincontent #project3 .projectheaderandpara {
-    margin: auto;
-  }
-  .maincontent #project3 .projectheaderandpara p {
-    font-size: 16px;
-    background: rgba(255, 255, 255, 0.034);
-    -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-            box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.11);
-    backdrop-filter: blur(3.5px);
-    -webkit-backdrop-filter: blur(3.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.329);
-    padding: 15px;
-  }
-  .maincontent #project3 .projectheaderandpara h2 {
-    font-size: 42px;
-    margin: auto;
-    grid-area: projectheader;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #d8d8d8;
-  }
-  .maincontent #project3 .image {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: image;
   }
   .maincontent footer {
     display: -ms-grid;
@@ -804,7 +659,6 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 .buttoncontainer .center a.button1 {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #FFFFFF;
   margin: 0 0.3em 0.3em 0;
   border-radius: 0.12em;
   -webkit-box-sizing: border-box;
@@ -816,6 +670,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   text-align: center;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+  background: #161616;
 }
 
 .buttoncontainer .center a.button1:hover {
