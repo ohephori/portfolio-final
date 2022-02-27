@@ -214,7 +214,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: project5;
     padding: 20px;
     margin: 10px;
-    border: #cfcfcf 1px solid;
+    margin-top: 50px;
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 
     img{
       padding: 20px;
@@ -225,40 +231,48 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: project1;
     border-radius: 10px;
     text-align: center;
-    background: rgb(255,141,252);
-    background: linear-gradient(60deg, rgba(255,141,252,1) 0%, rgba(85,159,255,1) 100%);
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px;
-    color: #0c0c0c;
+    color: #ffffff;
       h2{
         text-align: center;
       }
 
       p{
         text-align: center;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
         backdrop-filter: blur( 15px );
         -webkit-backdrop-filter: blur( 15px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
+        
       }
 
   }
   #project4{
-    background-color: #8b8b8b00;
     grid-area: project4;
     border-radius: 10px;
     text-align: center;
-    background: rgb(150,96,235);
-    background: linear-gradient(60deg, rgba(150,96,235,1) 0%, rgba(255,171,85,1) 100%);
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px;
-    color: #0c0c0c;
+    color: #ffffff;
       h2{
         text-align: center;
       }
 
       p{
         text-align: center;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
         backdrop-filter: blur( 15px );
         -webkit-backdrop-filter: blur( 15px );
         border-radius: 10px;
@@ -272,21 +286,26 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: project2;
     border-radius: 10px;
     text-align: center;
-    background: rgb(254,66,66);
-    background: linear-gradient(60deg, rgba(254,66,66,1) 0%, rgba(153,80,255,1) 100%);
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px;
-    color: #0c0c0c;
+    color: #ffffff;
       h2{
         text-align: center;
       }
 
       p{
         text-align: center;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
         backdrop-filter: blur( 15px );
         -webkit-backdrop-filter: blur( 15px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
+        
       }
 
   }
@@ -296,21 +315,26 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: project3;
     border-radius: 10px;
     text-align: center;
-    background: rgb(255,250,144);
-    background: linear-gradient(60deg, rgba(255,250,144,1) 0%, rgba(80,183,255,1) 100%);
+    background: rgba( 255, 255, 255, 0 );
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 30px;
-    color: #0c0c0c;
+    color: #ffffff;
       h2{
         text-align: center;
       }
 
       p{
         text-align: center;
-        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
         backdrop-filter: blur( 15px );
         -webkit-backdrop-filter: blur( 15px );
         border-radius: 10px;
         border: 1px solid rgba( 255, 255, 255, 0.18 );
+        
       }
 
   }
@@ -392,7 +416,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0c0c0c;
+    -webkit-text-stroke-color: #ffffff;
     }
   }
 
@@ -432,7 +456,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0c0c0c;
+    -webkit-text-stroke-color: #ffffff;
     }
   }
 
@@ -472,7 +496,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0c0c0c;
+    -webkit-text-stroke-color: #ffffff;
     }
   }
 
@@ -513,7 +537,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     grid-area: projectheader;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #0c0c0c;
+    -webkit-text-stroke-color: #ffffff;
     }
   }
 
@@ -632,10 +656,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
         text-decoration:none;
         font-family:'Roboto',sans-serif;
         font-weight:300;
-        color:#FFFFFF;
+        color:#000000;
         text-align:center;
         transition: all 0.2s;
-        background: rgb(22, 22, 22);
+        background: rgb(255, 255, 255);
         }
         a.button1:hover{
         color:#000000;

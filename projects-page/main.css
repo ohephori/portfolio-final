@@ -240,7 +240,14 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: project5;
   padding: 20px;
   margin: 10px;
-  border: #cfcfcf 1px solid;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 .maincontent #project5 img {
@@ -255,10 +262,15 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: project1;
   border-radius: 10px;
   text-align: center;
-  background: #ff8dfc;
-  background: linear-gradient(60deg, #ff8dfc 0%, #559fff 100%);
+  background: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 30px;
-  color: #0c0c0c;
+  color: #ffffff;
 }
 
 .maincontent #project1 h2 {
@@ -267,8 +279,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project1 p {
   text-align: center;
-  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -276,17 +288,21 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 .maincontent #project4 {
-  background-color: #8b8b8b00;
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: project4;
   border-radius: 10px;
   text-align: center;
-  background: #9660eb;
-  background: linear-gradient(60deg, #9660eb 0%, #ffab55 100%);
+  background: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 30px;
-  color: #0c0c0c;
+  color: #ffffff;
 }
 
 .maincontent #project4 h2 {
@@ -295,8 +311,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project4 p {
   text-align: center;
-  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -311,10 +327,15 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: project2;
   border-radius: 10px;
   text-align: center;
-  background: #fe4242;
-  background: linear-gradient(60deg, #fe4242 0%, #9950ff 100%);
+  background: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 30px;
-  color: #0c0c0c;
+  color: #ffffff;
 }
 
 .maincontent #project2 h2 {
@@ -323,8 +344,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project2 p {
   text-align: center;
-  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -339,10 +360,15 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: project3;
   border-radius: 10px;
   text-align: center;
-  background: #fffa90;
-  background: linear-gradient(60deg, #fffa90 0%, #50b7ff 100%);
+  background: rgba(255, 255, 255, 0);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 30px;
-  color: #0c0c0c;
+  color: #ffffff;
 }
 
 .maincontent #project3 h2 {
@@ -351,8 +377,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 .maincontent #project3 p {
   text-align: center;
-  -webkit-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-          box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  -webkit-box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
+          box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37);
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   border-radius: 10px;
@@ -440,7 +466,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #0c0c0c;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 #project1 .image {
@@ -489,7 +515,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #0c0c0c;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 #project4 .image {
@@ -538,7 +564,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #0c0c0c;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 #project2 .image {
@@ -587,7 +613,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   grid-area: projectheader;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: #0c0c0c;
+  -webkit-text-stroke-color: #ffffff;
 }
 
 #project3 .image {
@@ -709,11 +735,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   text-decoration: none;
   font-family: 'Roboto',sans-serif;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #000000;
   text-align: center;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  background: #161616;
+  background: white;
 }
 
 .buttoncontainer .center a.button1:hover {
