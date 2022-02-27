@@ -195,8 +195,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   display: grid;
   height: auto;
   grid-template-columns: .65fr 1fr 1fr .65fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr .1fr;
+  grid-template-rows: .1fr 1fr 1fr 1fr 1fr .1fr;
   grid-template-areas: 
+  ". project5 project5 ."
   ". project4 project4 ."
   ". project1 project1 ."
   ". project2 project2 ."
@@ -206,6 +207,19 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   margin: auto;
   font-family:'Poppins', sans-serif;
 
+  #project5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: project5;
+    padding: 20px;
+    margin: 10px;
+    border: #cfcfcf 1px solid;
+
+    img{
+      padding: 20px;
+    }
+  }
   #project1{
     background-color: #8b8b8b00;
     grid-area: project1;
@@ -519,8 +533,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     display: grid;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: .1fr .1fr .1fr .1fr .1fr;
+    grid-template-rows: .1fr .1fr .1fr .1fr .1fr .1fr;
     grid-template-areas: 
+    "project5"
     "project4"
     "project1"
     "project2"
@@ -530,6 +545,20 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     margin: auto;
     font-family:'Poppins', sans-serif;
     
+    #project5{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      grid-area: project5;
+      padding: 20px;
+      margin: 10px;
+      border: #cfcfcf 1px solid;
+  
+      img{
+        padding: 20px;
+      }
+    }
+
     footer{
       display: grid;
       height: auto;
