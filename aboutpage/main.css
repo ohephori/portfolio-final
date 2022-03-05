@@ -216,10 +216,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   height: auto;
   -ms-grid-columns: .5fr 1fr .5fr;
       grid-template-columns: .5fr 1fr .5fr;
-  -ms-grid-rows: .1fr 1fr 1fr .1fr;
-      grid-template-rows: .1fr 1fr 1fr .1fr;
+  -ms-grid-rows: .1fr 1fr .1fr;
+      grid-template-rows: .1fr 1fr .1fr;
       grid-template-areas: ". . ." "sidebar1 aboutbox sidebar2" "sidebar1 spaceart sidebar2" "footer footer footer";
-  grid-gap: .25em;
+  grid-gap: 1.25em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
 }
@@ -335,11 +335,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   display: -ms-grid;
   display: grid;
   height: auto;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr .1fr .1fr .1fr;
-      grid-template-rows: 1fr 1fr .1fr .1fr .1fr;
-      grid-template-areas: "hello about3" "hello about3" "about2 about2";
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: .1fr .1fr;
+      grid-template-rows: .1fr .1fr;
+      grid-template-areas: "about3" "about2";
   grid-gap: 0.5em;
   margin: auto;
   font-family: 'Poppins', sans-serif;
@@ -347,11 +347,8 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 
 #aboutbox #hello {
   margin: auto;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 1;
   grid-area: hello;
-  font-size: 3em;
+  font-size: 5em;
   text-align: center;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 2px;
@@ -359,11 +356,10 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 }
 
 #aboutbox #about2 {
-  font-size: 1em;
+  font-size: 1.5em;
   margin: auto;
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-area: about2;
   text-align: center;
   color: #d8d8d8;
@@ -372,8 +368,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 #aboutbox #about3 {
   margin: auto;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: about3;
   font-size: 20px;
   padding: 15px;
@@ -462,16 +457,14 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     height: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-areas: "hello" "about3" "about2";
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "about3" "about2";
     grid-gap: 0.5em;
     margin: 0.5em;
     font-family: 'Poppins', sans-serif;
   }
   .maincontent #aboutbox #hello {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
     grid-area: hello;
     font-size: 60px;
     text-align: center;
@@ -481,7 +474,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
   .maincontent #aboutbox #about2 {
     font-size: 16px;
-    -ms-grid-row: 3;
+    -ms-grid-row: 2;
     -ms-grid-column: 1;
     grid-area: about2;
     text-align: center;
@@ -494,7 +487,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
     border: 1px solid rgba(255, 255, 255, 0.329);
   }
   .maincontent #aboutbox #about3 {
-    -ms-grid-row: 2;
+    -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: about3;
     font-size: 20px;

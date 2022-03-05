@@ -194,13 +194,13 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   display: grid;
   height: auto;
   grid-template-columns:  .5fr 1fr .5fr;
-  grid-template-rows: .1fr 1fr 1fr .1fr;
+  grid-template-rows: .1fr 1fr .1fr;
   grid-template-areas: 
   ". . ."
   "sidebar1 aboutbox sidebar2"
   "sidebar1 spaceart sidebar2"
   "footer footer footer";
-  grid-gap: .25em;
+  grid-gap: 1.25em;
   margin: auto;
   font-family:'Poppins', sans-serif;
 
@@ -297,12 +297,11 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
 #aboutbox{
   display: grid;
   height: auto;
-  grid-template-columns:  1fr 1fr ;
-  grid-template-rows: 1fr 1fr .1fr .1fr .1fr;
+  grid-template-columns: 1fr ;
+  grid-template-rows: .1fr .1fr;
   grid-template-areas: 
-  "hello about3"
-  "hello about3"
-  "about2 about2";
+  "about3"
+  "about2";
   grid-gap: 0.5em;
   margin: auto;
   font-family:'Poppins', sans-serif;
@@ -310,7 +309,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   #hello{
     margin: auto;
     grid-area: hello;
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
@@ -319,7 +318,7 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
   }
 
   #about2{
-    font-size: 1em;
+    font-size: 1.5em;
     margin: auto;
     grid-area: about2;
     text-align: center;
@@ -403,9 +402,9 @@ nav :checked ~ .icon-burger .line:nth-child(2) {
       display: grid;
       height: auto;
       grid-template-columns:  1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
       grid-template-areas: 
-      "hello"
+      
       "about3"
       "about2";
       grid-gap: 0.5em;
